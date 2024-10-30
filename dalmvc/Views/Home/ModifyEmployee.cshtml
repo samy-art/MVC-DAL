@@ -1,0 +1,19 @@
+﻿@model dallib.EmpOrm
+
+@{
+    ViewBag.Title = "ModifyEmployee";
+}
+
+<h2>ModifyEmployee</h2>
+
+@using (Html.BeginForm())
+{
+
+    @Html.HiddenFor(e => e.EmpID)
+    <P> ID :@Html.DisplayFor(e => e.EmpID)</P>
+    <P> Name :@Html.TextBoxFor(e => e.EmpName)</P>
+    <P> Department :@Html.TextBoxFor(e => e.DeptID)</P>
+    <input type="submit" value="SUBMIT" />
+}
+
+
